@@ -11,6 +11,9 @@
 		9DC04CD32C9DFFE000610E1A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC04CD22C9DFFE000610E1A /* ContentView.swift */; };
 		9DC04CD52C9DFFE200610E1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DC04CD42C9DFFE200610E1A /* Assets.xcassets */; };
 		9DC04CD82C9DFFE200610E1A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DC04CD72C9DFFE200610E1A /* Preview Assets.xcassets */; };
+		9DC04CE62C9E056300610E1A /* PhotoEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC04CE52C9E056300610E1A /* PhotoEditorView.swift */; };
+		9DC04CE82C9E058800610E1A /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC04CE72C9E058800610E1A /* SignIn.swift */; };
+		9DC04CEC2C9E130E00610E1A /* PhotoEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC04CEB2C9E130E00610E1A /* PhotoEditorViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		9DC04CD22C9DFFE000610E1A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9DC04CD42C9DFFE200610E1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DC04CD72C9DFFE200610E1A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9DC04CE52C9E056300610E1A /* PhotoEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditorView.swift; sourceTree = "<group>"; };
+		9DC04CE72C9E058800610E1A /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		9DC04CEB2C9E130E00610E1A /* PhotoEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditorViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +57,11 @@
 		9DC04CCF2C9DFFDF00610E1A /* TestApplicationCanva */ = {
 			isa = PBXGroup;
 			children = (
-				9DC04CD02C9DFFDF00610E1A /* TestApplicationCanvaApp.swift */,
-				9DC04CD22C9DFFE000610E1A /* ContentView.swift */,
-				9DC04CD42C9DFFE200610E1A /* Assets.xcassets */,
-				9DC04CD62C9DFFE200610E1A /* Preview Content */,
+				9DC04CE02C9E020000610E1A /* Application */,
+				9DC04CDF2C9E01F200610E1A /* Presentation */,
+				9DC04CE22C9E023000610E1A /* Data */,
+				9DC04CE12C9E022500610E1A /* Domain */,
+				9DC04CDE2C9E01D700610E1A /* Resources */,
 			);
 			path = TestApplicationCanva;
 			sourceTree = "<group>";
@@ -65,6 +72,64 @@
 				9DC04CD72C9DFFE200610E1A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9DC04CDE2C9E01D700610E1A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9DC04CD42C9DFFE200610E1A /* Assets.xcassets */,
+				9DC04CD62C9DFFE200610E1A /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9DC04CDF2C9E01F200610E1A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				9DC04CD22C9DFFE000610E1A /* ContentView.swift */,
+				9DC04CE32C9E028B00610E1A /* Authentication */,
+				9DC04CE42C9E053300610E1A /* PhotoEditor */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		9DC04CE02C9E020000610E1A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				9DC04CD02C9DFFDF00610E1A /* TestApplicationCanvaApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		9DC04CE12C9E022500610E1A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		9DC04CE22C9E023000610E1A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		9DC04CE32C9E028B00610E1A /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				9DC04CE72C9E058800610E1A /* SignIn.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		9DC04CE42C9E053300610E1A /* PhotoEditor */ = {
+			isa = PBXGroup;
+			children = (
+				9DC04CE52C9E056300610E1A /* PhotoEditorView.swift */,
+				9DC04CEB2C9E130E00610E1A /* PhotoEditorViewModel.swift */,
+			);
+			path = PhotoEditor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +202,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DC04CEC2C9E130E00610E1A /* PhotoEditorViewModel.swift in Sources */,
+				9DC04CE62C9E056300610E1A /* PhotoEditorView.swift in Sources */,
 				9DC04CD32C9DFFE000610E1A /* ContentView.swift in Sources */,
 				9DC04CD12C9DFFDF00610E1A /* TestApplicationCanvaApp.swift in Sources */,
+				9DC04CE82C9E058800610E1A /* SignIn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +339,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TestApplicationCanva/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TestApplicationCanva/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = P2LBNZ3DVN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -300,7 +368,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TestApplicationCanva/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TestApplicationCanva/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = P2LBNZ3DVN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
