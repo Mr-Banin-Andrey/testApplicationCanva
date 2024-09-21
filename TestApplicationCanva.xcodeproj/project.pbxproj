@@ -14,6 +14,10 @@
 		9DC04CE62C9E056300610E1A /* PhotoEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC04CE52C9E056300610E1A /* PhotoEditorView.swift */; };
 		9DC04CE82C9E058800610E1A /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC04CE72C9E058800610E1A /* SignIn.swift */; };
 		9DC04CEC2C9E130E00610E1A /* PhotoEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC04CEB2C9E130E00610E1A /* PhotoEditorViewModel.swift */; };
+		9DC04CF02C9EF5B400610E1A /* AccessCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC04CEF2C9EF5B400610E1A /* AccessCameraView.swift */; };
+		9DC04CF22C9EF5C400610E1A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC04CF12C9EF5C400610E1A /* Coordinator.swift */; };
+		9DC04CF52C9F17CF00610E1A /* ViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC04CF42C9F17CF00610E1A /* ViewExt.swift */; };
+		9DC04CF82C9F189D00610E1A /* Rotated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC04CF72C9F189D00610E1A /* Rotated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,11 @@
 		9DC04CE52C9E056300610E1A /* PhotoEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditorView.swift; sourceTree = "<group>"; };
 		9DC04CE72C9E058800610E1A /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		9DC04CEB2C9E130E00610E1A /* PhotoEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditorViewModel.swift; sourceTree = "<group>"; };
+		9DC04CED2C9EE56D00610E1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DC04CEF2C9EF5B400610E1A /* AccessCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessCameraView.swift; sourceTree = "<group>"; };
+		9DC04CF12C9EF5C400610E1A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		9DC04CF42C9F17CF00610E1A /* ViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExt.swift; sourceTree = "<group>"; };
+		9DC04CF72C9F189D00610E1A /* Rotated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rotated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +71,7 @@
 				9DC04CE22C9E023000610E1A /* Data */,
 				9DC04CE12C9E022500610E1A /* Domain */,
 				9DC04CDE2C9E01D700610E1A /* Resources */,
+				9DC04CED2C9EE56D00610E1A /* Info.plist */,
 			);
 			path = TestApplicationCanva;
 			sourceTree = "<group>";
@@ -89,6 +99,8 @@
 				9DC04CD22C9DFFE000610E1A /* ContentView.swift */,
 				9DC04CE32C9E028B00610E1A /* Authentication */,
 				9DC04CE42C9E053300610E1A /* PhotoEditor */,
+				9DC04CF62C9F188A00610E1A /* Common */,
+				9DC04CF32C9F178200610E1A /* UIExtensions */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -126,10 +138,36 @@
 		9DC04CE42C9E053300610E1A /* PhotoEditor */ = {
 			isa = PBXGroup;
 			children = (
+				9DC04CEE2C9EF59A00610E1A /* AccessCamera */,
 				9DC04CE52C9E056300610E1A /* PhotoEditorView.swift */,
 				9DC04CEB2C9E130E00610E1A /* PhotoEditorViewModel.swift */,
 			);
 			path = PhotoEditor;
+			sourceTree = "<group>";
+		};
+		9DC04CEE2C9EF59A00610E1A /* AccessCamera */ = {
+			isa = PBXGroup;
+			children = (
+				9DC04CEF2C9EF5B400610E1A /* AccessCameraView.swift */,
+				9DC04CF12C9EF5C400610E1A /* Coordinator.swift */,
+			);
+			path = AccessCamera;
+			sourceTree = "<group>";
+		};
+		9DC04CF32C9F178200610E1A /* UIExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				9DC04CF42C9F17CF00610E1A /* ViewExt.swift */,
+			);
+			path = UIExtensions;
+			sourceTree = "<group>";
+		};
+		9DC04CF62C9F188A00610E1A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9DC04CF72C9F189D00610E1A /* Rotated.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,8 +243,12 @@
 				9DC04CEC2C9E130E00610E1A /* PhotoEditorViewModel.swift in Sources */,
 				9DC04CE62C9E056300610E1A /* PhotoEditorView.swift in Sources */,
 				9DC04CD32C9DFFE000610E1A /* ContentView.swift in Sources */,
+				9DC04CF02C9EF5B400610E1A /* AccessCameraView.swift in Sources */,
+				9DC04CF52C9F17CF00610E1A /* ViewExt.swift in Sources */,
+				9DC04CF82C9F189D00610E1A /* Rotated.swift in Sources */,
 				9DC04CD12C9DFFDF00610E1A /* TestApplicationCanvaApp.swift in Sources */,
 				9DC04CE82C9E058800610E1A /* SignIn.swift in Sources */,
+				9DC04CF22C9EF5C400610E1A /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +385,8 @@
 				DEVELOPMENT_TEAM = P2LBNZ3DVN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestApplicationCanva/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs to capture image to show in the app.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -372,6 +416,8 @@
 				DEVELOPMENT_TEAM = P2LBNZ3DVN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestApplicationCanva/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs to capture image to show in the app.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
