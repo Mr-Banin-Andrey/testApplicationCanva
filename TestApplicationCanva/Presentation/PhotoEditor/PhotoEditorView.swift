@@ -14,44 +14,47 @@ struct PhotoEditorView: View {
     @State private var selectedItem: PhotosPickerItem?
     @State private var showCamera: Bool = false
     @State private var rotation = 0.0
+    @State private var scale = 0.0
     
     var body: some View {
         VStack {
             if let image = viewModel.selectedImageData {
-                ZStack {
-                    Image(uiImage: image)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 300, height: 400)
-                        .rotationEffect(.degrees(rotation))
+                VStack{
+                    ZStack {
+                        Image(uiImage: image)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: UIScreen.main.bounds.width, height: 400)
+                            .scaleEffect(1 + scale)
+                            .gesture(
+                                MagnificationGesture()
+                                    .onChanged({ value in
+                                        scale = value - 1
+                                    })
+                                    .onEnded({ value in
+                                        withAnimation(.spring) {
+                                            scale = 0
+                                        }
+                                    })
+                            )
+                    }
+                    .rotationEffect(.degrees(rotation))
                 }
                 .rotated()
-                                    
+                
                 HStack {
-                    VStack {
-                        Button {
-                            print("123")
-                        } label: {
-                            Image(systemName: "crop")
-                                .foregroundStyle(Color.purple)
+                    Button {
+                        withAnimation {
+                            rotation += 90.0
                         }
-                        
-                        Text("Обрезать")
-                            .foregroundStyle(Color.purple)
-                    }
-                    
-                    VStack {
-                        Button {
-                            withAnimation {
-                                rotation += 90.0
-                            }
-                        } label: {
+                    } label: {
+                        VStack {
                             Image(systemName: "rotate.right")
                                 .foregroundStyle(Color.purple)
+                            
+                            Text("Повернуть")
+                                .foregroundStyle(Color.purple)
                         }
-                        
-                        Text("Повернуть")
-                            .foregroundStyle(Color.purple)
                     }
                 }
                 .padding(.top, 16)
