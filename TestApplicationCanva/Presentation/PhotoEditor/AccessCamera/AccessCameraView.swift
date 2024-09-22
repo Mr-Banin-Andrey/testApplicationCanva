@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct AccessCameraView: UIViewControllerRepresentable {
-    @Binding var selectedImage: UIImage?
+//    @Binding var selectedImage: UIImage?
+    @Binding var selectedImageData: Data?
     @Environment(\.presentationMode) var isPresented
         
     func makeUIViewController(context: Context) -> UIImagePickerController {

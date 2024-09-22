@@ -16,7 +16,7 @@ class CoordinatorPicker: NSObject, UINavigationControllerDelegate, UIImagePicker
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         guard let selectedImage = info[.originalImage] as? UIImage else { return }
-        self.picker.selectedImage = selectedImage
+        self.picker.selectedImageData = selectedImage.jpegData(compressionQuality: 1)
         self.picker.isPresented.wrappedValue.dismiss()
     }
 }

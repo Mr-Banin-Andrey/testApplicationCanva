@@ -9,5 +9,6 @@ import SwiftUI
 
 final class PhotoEditorViewModel: ObservableObject {
         
-    @Published var selectedImageData: UIImage?
+//    @Published var selectedImage: UIImage?
+    @Published var selectedImageData: Data?
 }
