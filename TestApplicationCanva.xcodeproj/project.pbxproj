@@ -20,6 +20,7 @@
 		9DC04CF82C9F189D00610E1A /* Rotated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC04CF72C9F189D00610E1A /* Rotated.swift */; };
 		9DCF3CB02CA0561C000BC5B8 /* EditingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCF3CAF2CA0561C000BC5B8 /* EditingImageView.swift */; };
 		9DCF3CB22CA05683000BC5B8 /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCF3CB12CA05683000BC5B8 /* Canvas.swift */; };
+		9DCF3CB62CA1A038000BC5B8 /* SelectImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCF3CB52CA1A038000BC5B8 /* SelectImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		9DC04CF72C9F189D00610E1A /* Rotated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rotated.swift; sourceTree = "<group>"; };
 		9DCF3CAF2CA0561C000BC5B8 /* EditingImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingImageView.swift; sourceTree = "<group>"; };
 		9DCF3CB12CA05683000BC5B8 /* Canvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
+		9DCF3CB52CA1A038000BC5B8 /* SelectImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				9DCF3CAE2CA055BB000BC5B8 /* EditingImage */,
 				9DC04CE52C9E056300610E1A /* PhotoEditorView.swift */,
 				9DC04CEB2C9E130E00610E1A /* PhotoEditorViewModel.swift */,
+				9DCF3CB52CA1A038000BC5B8 /* SelectImage.swift */,
 			);
 			path = PhotoEditor;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				9DC04CF02C9EF5B400610E1A /* AccessCameraView.swift in Sources */,
 				9DC04CF52C9F17CF00610E1A /* ViewExt.swift in Sources */,
 				9DC04CF82C9F189D00610E1A /* Rotated.swift in Sources */,
+				9DCF3CB62CA1A038000BC5B8 /* SelectImage.swift in Sources */,
 				9DC04CD12C9DFFDF00610E1A /* TestApplicationCanvaApp.swift in Sources */,
 				9DC04CE82C9E058800610E1A /* SignIn.swift in Sources */,
 				9DC04CF22C9EF5C400610E1A /* Coordinator.swift in Sources */,

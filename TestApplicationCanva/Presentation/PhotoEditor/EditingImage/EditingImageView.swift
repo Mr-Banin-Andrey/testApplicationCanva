@@ -13,7 +13,7 @@ struct EditingImageView: View {
     @State private var canvasView = PKCanvasView()
     @State private var tool = PKToolPicker()
 
-    @State private var showPicker: Bool = true
+    @State private var showPicker: Bool = false
     @State var imageData: Data = (UIImage(named: "images")?.jpegData(compressionQuality: 1) ?? Data())
 
     var body: some View {
@@ -47,7 +47,7 @@ struct EditingImageView: View {
                         )
                     )
                 }
-//                Spacer()
+                Spacer()
             }
         }
     }
